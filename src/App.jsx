@@ -1,11 +1,33 @@
-import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Listado from "./components/Listado/Listado";
+import Footer from "./layout/Footer/Footer";
+import Contact from "./components/Contact/Contact";
+import Header from "./layout/Header/Header";
+import Home from "./layout/Home/Home";
+import CartProvider from "./context/CartContext/CartContext";
+import CartContent from "./components/cart/CartContent/CartContent";
+import Checkout from "./components/cart/Checkout/Checkout";
+import DetailPage from "./components/Detail/DetailPage/DetailPage";
+import Practica from "./components/Practica/Practica";
 
-const App = () => {
+function App() {
   return (
-    <main className="min-h-screen bg-black text-white flex justify-center items-center">
-      App
-    </main>
+    <>
+      <CartProvider>
+        <Header />
+        <Routes>
+          <Route exact path="/" Component={Home} />
+          <Route path="/contact" Component={Contact} />
+          <Route path="/listado" Component={Listado} />
+          <Route path="/cartContent" Component={CartContent} />
+          <Route path="/checkout" Component={Checkout} />
+          <Route path="/detail/:id" Component={DetailPage} />
+          <Route path="/practica/" Component={Practica} />
+        </Routes>
+        <Footer />
+      </CartProvider>
+    </>
   );
-};
+}
 
 export default App;
