@@ -40,8 +40,19 @@ const CartProvider = ({ children }) => {
     }
   };
 
+  const deleteProduct = (id) => {
+    const foundID = cart.find((element) => element.id === id);
+    const newCart = cart.filter((element) => {
+      return element !== foundID;
+    });
+
+    setCart(newCart);
+  };
+
   return (
-    <CartContext.Provider value={{ cart, setCart, buyProduct, decrese }}>
+    <CartContext.Provider
+      value={{ cart, setCart, buyProduct, decrese, deleteProduct }}
+    >
       {children}
     </CartContext.Provider>
   );

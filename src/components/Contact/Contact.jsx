@@ -2,14 +2,14 @@ const Contact = () => {
   return (
     <main className="min-h-screen bg-white">
       <article className="flex justify-evenly py-16 flex-col sm: px-4 lg:flex-row">
-        <div className="lg:w-[1200px] lg:h-[900px] w-[350px] h-[300px]">
+        <div className="lg:w-[900px] lg:h-[800px] w-[350px] h-[300px]">
           <img
             className="w-full h-full object-cover"
             src="https://images.pexels.com/photos/28428592/pexels-photo-28428592/free-photo-of-estructura-abstracta-de-cubo-3d-sobre-fondo-oscuro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="contact img"
           />
         </div>
-        <div className="pt-7">
+        <div className="pt-7 pl-5">
           <div className="pb-7">
             <h3 className="text-black lg:text-3xl text-2xl font-semibold pb-3">
               BUENOS AIRES

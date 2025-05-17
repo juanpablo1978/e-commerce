@@ -21,7 +21,7 @@ function App() {
           <Route path="/listado" Component={Listado} />
           <Route path="/cartContent" Component={CartContent} />
           <Route path="/checkout" Component={Checkout} />
-          <Route path="/detail/:id" Component={DetailPage} />
+          <Route path="/detailPage/:id" Component={DetailPage} />
           <Route path="/practica/" Component={Practica} />
         </Routes>
         <Footer />

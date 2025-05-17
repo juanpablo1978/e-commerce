@@ -8,7 +8,7 @@ export const productos = [
        "rating":4.92,
        "stock":54,
        "brand":"Apple",
-       "category":"computer",
+       "category":"Computer",
        "thumbnail":"https://i.dummyjson.com/data/products/30/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/38568/apple-imac-ipad-workplace-38568.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -23,7 +23,7 @@ export const productos = [
        "rating":4.57,
        "stock":83,
        "brand":"Apple",
-       "category":"laptops",
+       "category":"Laptops",
        "thumbnail":"https://i.dummyjson.com/data/products/6/thumbnail.png",
        "images":
        "https://images.pexels.com/photos/249538/pexels-photo-249538.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -38,7 +38,7 @@ export const productos = [
        "rating":4.44,
        "stock":34,
        "brand":"Apple",
-       "category":"smartphones",
+       "category":"Smartphones",
        "thumbnail":"https://i.dummyjson.com/data/products/2/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/9867097/pexels-photo-9867097.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -53,7 +53,7 @@ export const productos = [
        "rating":4.09,
        "stock":36,
        "brand":"Samsung",
-       "category":"smartphones",
+       "category":"Smartphones",
        "thumbnail":"https://i.dummyjson.com/data/products/3/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/16442035/pexels-photo-16442035/free-photo-of-hierba-cesped-suelo-molido.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -69,7 +69,7 @@ export const productos = [
        "rating":4.3,
        "stock":123,
        "brand":"Casio",
-       "category":"watches",
+       "category":"Watches",
        "thumbnail":"https://i.dummyjson.com/data/products/4/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/11106317/pexels-photo-11106317.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -84,7 +84,7 @@ export const productos = [
        "rating":4.09,
        "stock":32,
        "brand":"Sony",
-       "category":"smartwatches",
+       "category":"Smartwatches",
        "thumbnail":"https://i.dummyjson.com/data/products/5/thumbnail.jpg",
        "images":
           "https://media.istockphoto.com/id/1286099942/es/foto/primer-plano-de-la-mano-tocando-reloj-inteligente-con-la-aplicaci%C3%B3n-de-salud-en-la-pantalla.jpg?b=1&s=612x612&w=0&k=20&c=7579Hgc4bzku9AuIcdSdRFrf88nFi0c3fZAn5EqiN1g=",
@@ -99,7 +99,7 @@ export const productos = [
        "rating":4.25,
        "stock":50,
        "brand":"Nikon",
-       "category":"handset",
+       "category":"Handset",
        "thumbnail":"https://i.dummyjson.com/data/products/7/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/577768/pexels-photo-577768.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -114,7 +114,7 @@ export const productos = [
        "rating":4.69,
        "stock":94,
        "brand":"Sony",
-       "category":"cameras",
+       "category":"Cameras",
        "thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/2929411/pexels-photo-2929411.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -129,7 +129,7 @@ export const productos = [
        "rating":4.43,
        "stock":68,
        "brand":"Sony",
-       "category":"handset",
+       "category":"Handset",
        "thumbnail":"https://i.dummyjson.com/data/products/8/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/164710/pexels-photo-164710.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -144,7 +144,7 @@ export const productos = [
        "rating":4.54,
        "stock":96,
        "brand":"Nikon",
-       "category":"cameras",
+       "category":"Cameras",
        "thumbnail":"https://i.dummyjson.com/data/products/9/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/17345664/pexels-photo-17345664/free-photo-of-camara-fotografia-lente-objetivo.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -159,7 +159,7 @@ export const productos = [
        "rating":4.43,
        "stock":89,
        "brand":"Canon",
-       "category":"cameras",
+       "category":"Cameras",
        "thumbnail":"https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
        "images":
           "https://images.pexels.com/photos/274973/pexels-photo-274973.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -174,7 +174,7 @@ export const productos = [
        "rating":4.26,
        "stock":65,
        "brand":"Motorola",
-       "category":"smartphones",
+       "category":"Smartphones",
        "thumbnail":"https://i.dummyjson.com/data/products/11/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/215583/pexels-photo-215583.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -189,7 +189,7 @@ export const productos = [
        "rating":4,
        "stock":52,
        "brand":"LG",
-       "category":"smartphones",
+       "category":"Smartphones",
        "thumbnail":"https://images.pexels.com/photos/16121801/pexels-photo-16121801/free-photo-of-tecnologia-comunicacion-lg-vista-superior.jpeg?auto=compress&cs=tinysrgb&w=600",
        "images":
           "https://images.pexels.com/photos/16121801/pexels-photo-16121801/free-photo-of-tecnologia-comunicacion-lg-vista-superior.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -204,7 +204,7 @@ export const productos = [
        "rating":4.59,
        "stock":61,
        "brand":"Rolex",
-       "category":"watches",
+       "category":"Watches",
        "thumbnail":"https://i.dummyjson.com/data/products/13/thumbnail.webp",
        "images":
           "https://images.pexels.com/photos/6230456/pexels-photo-6230456.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -219,7 +219,7 @@ export const productos = [
        "rating":4.21,
        "stock":114,
        "brand":"Rolex",
-       "category":"watches",
+       "category":"Watches",
        "thumbnail":"https://i.dummyjson.com/data/products/14/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/9561300/pexels-photo-9561300.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -234,7 +234,7 @@ export const productos = [
        "rating":4.7,
        "stock":105,
        "brand":"Apple",
-       "category":"smartwatches",
+       "category":"Smartwatches",
        "thumbnail":"https://i.dummyjson.com/data/products/15/thumbnail.jpg",
        "images":
           "https://media.istockphoto.com/id/1310475310/es/foto/mujer-mirando-su-reloj-inteligente-para-un-rastro-de-pulso.jpg?b=1&s=612x612&w=0&k=20&c=UahfjEpveKBtByPGysWJLltfBfXScr3GAiAAoJ99G8w=",
@@ -249,7 +249,7 @@ export const productos = [
        "rating":4.83,
        "stock":110,
        "brand":"LG",
-       "category":"smartwatches",
+       "category":"Smartwatches",
        "thumbnail":"https://i.dummyjson.com/data/products/16/thumbnail.jpg",
        "images":
           "https://media.istockphoto.com/id/939659044/es/foto/reloj-del-fasion.jpg?b=1&s=612x612&w=0&k=20&c=OA9XPUnsSQnCgl7Yyy5I3oLLEWeocoz2FQIxx6q_s2Q=",
@@ -264,7 +264,7 @@ export const productos = [
        "rating":4.52,
        "stock":78,
        "brand":"Huawei",
-       "category":"smartphones",
+       "category":"Smartphones",
        "thumbnail":"https://i.dummyjson.com/data/products/17/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/5077427/pexels-photo-5077427.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -279,7 +279,7 @@ export const productos = [
        "rating":4.56,
        "stock":88,
        "brand":"Apple",
-       "category":"smartphone",
+       "category":"Smartphone",
        "thumbnail":"https://i.dummyjson.com/data/products/18/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -294,7 +294,7 @@ export const productos = [
        "rating":4.42,
        "stock":54,
        "brand":"Apple",
-       "category":"smartwatches",
+       "category":"Smartwatches",
        "thumbnail":"https://i.dummyjson.com/data/products/19/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/818043/pexels-photo-818043.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -309,7 +309,7 @@ export const productos = [
        "rating":4.06,
        "stock":140,
        "brand":"Apple",
-       "category":"computer",
+       "category":"Computer",
        "thumbnail":"https://i.dummyjson.com/data/products/20/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -324,7 +324,7 @@ export const productos = [
        "rating":4.44,
        "stock":133,
        "brand":"Apple",
-       "category":"computer",
+       "category":"Computer",
        "thumbnail":"https://i.dummyjson.com/data/products/21/thumbnail.png",
        "images":
           "https://images.pexels.com/photos/115655/pexels-photo-115655.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -339,7 +339,7 @@ export const productos = [
        "rating":4.57,
        "stock":146,
        "brand":"Pioneer",
-       "category":"handset",
+       "category":"Handset",
        "thumbnail":"https://i.dummyjson.com/data/products/22/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -354,7 +354,7 @@ export const productos = [
        "rating":4.85,
        "stock":26,
        "brand":"Pioneer",
-       "category":"consoles",
+       "category":"Consoles",
        "thumbnail":"https://i.dummyjson.com/data/products/23/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/14457158/pexels-photo-14457158.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -369,7 +369,7 @@ export const productos = [
        "rating":4.94,
        "stock":113,
        "brand":"Pioneer",
-       "category":"consoles",
+       "category":"Consoles",
        "thumbnail":"https://i.dummyjson.com/data/products/24/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/2988289/pexels-photo-2988289.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -384,7 +384,7 @@ export const productos = [
        "rating":4.87,
        "stock":47,
        "brand":"Pioneer",
-       "category":"consoles",
+       "category":"Consoles",
        "thumbnail":"https://i.dummyjson.com/data/products/25/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/164745/pexels-photo-164745.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -399,7 +399,7 @@ export const productos = [
        "rating":4.08,
        "stock":131,
        "brand":"Casio",
-       "category":"watches",
+       "category":"Watches",
        "thumbnail":"https://i.dummyjson.com/data/products/26/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/9204686/pexels-photo-9204686.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -414,7 +414,7 @@ export const productos = [
        "rating":4.41,
        "stock":17,
        "brand":"Casio",
-       "category":"watches",
+       "category":"Watches",
        "thumbnail":"https://i.dummyjson.com/data/products/27/thumbnail.webp",
        "images":
           "https://images.pexels.com/photos/6349119/pexels-photo-6349119.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -429,7 +429,7 @@ export const productos = [
        "rating":4.82,
        "stock":54,
        "brand":"Xiaomi",
-       "category":"robots",
+       "category":"Robots",
        "thumbnail":"https://i.dummyjson.com/data/products/28/thumbnail.jpg",
        "images":
           "https://images.pexels.com/photos/4107242/pexels-photo-4107242.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -444,7 +444,7 @@ export const productos = [
        "rating":4.44,
        "stock":7,
        "brand":"Samsung",
-       "category":"robots",
+       "category":"Robots",
        "thumbnail":"https://i.dummyjson.com/data/products/29/thumbnail.webp",
        "images":
           "https://images.pexels.com/photos/844874/pexels-photo-844874.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -462,7 +462,7 @@ export const productos = [
       "rating":4.69,
       "stock":94,
       "brand":"Sony",
-      "category":"cameras",
+      "category":"Cameras",
       "thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg",
       "images":
          "https://images.pexels.com/photos/2929411/pexels-photo-2929411.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -477,7 +477,7 @@ export const productos = [
       "rating":4.43,
       "stock":68,
       "brand":"Sony",
-      "category":"handset",
+      "category":"Handset",
       "thumbnail":"https://i.dummyjson.com/data/products/8/thumbnail.jpg",
       "images":
          "https://images.pexels.com/photos/164710/pexels-photo-164710.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -492,7 +492,7 @@ export const productos = [
       "rating":4.56,
       "stock":88,
       "brand":"Apple",
-      "category":"smartphone",
+      "category":"Smartphone",
       "thumbnail":"https://i.dummyjson.com/data/products/18/thumbnail.jpg",
       "images":
          "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -507,7 +507,7 @@ export const productos = [
       "rating":4.44,
       "stock":133,
       "brand":"Apple",
-      "category":"computer",
+      "category":"Computer",
       "thumbnail":"https://i.dummyjson.com/data/products/21/thumbnail.png",
       "images":
          "https://images.pexels.com/photos/115655/pexels-photo-115655.jpeg?auto=compress&cs=tinysrgb&w=600",

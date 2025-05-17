@@ -1,13 +1,14 @@
 import { AiFillStar, AiOutlineShoppingCart } from "react-icons/ai";
-//import { useContext } from "react";
-//import { CartContext } from "../../context/CartContext/CartContext";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext/CartContext";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const CardProduct = ({ oneCard }) => {
   const { title, price, brand, category, images, id } = oneCard || {};
+  console.log(oneCard);
 
-  //const { buyProduct } = useContext(CartContext);
+  const { buyProduct } = useContext(CartContext);
 
   return (
     <div className="shadow-md mb-4">
@@ -48,15 +49,15 @@ const CardProduct = ({ oneCard }) => {
           </p>
         </div>
         <div className="py-3 flex justify-center items-center">
-          <Link to={`/detail/${id}`}>
+          <Link to={`/detailPage/${id}`}>
             {" "}
             <button
-              /* onClick={() => buyProduct(oneCard)}*/
+              onClick={() => buyProduct(oneCard)}
               className="flex justify-center items-center gap-2 px-2 py-2 bg-transparent
              text-black border-2 border-gray-300 cursor-pointer hover:border-black duration-300 rounded-xl"
             >
               <AiOutlineShoppingCart className="text-xl flex justify-center items-center" />
-              <p className="text-center text-base">Ver detalle</p>
+              <p className="text-center text-base">View detail</p>
             </button>
           </Link>
         </div>
@@ -68,5 +69,5 @@ const CardProduct = ({ oneCard }) => {
 export default CardProduct;
 
 CardProduct.propTypes = {
-  oneCard: PropTypes.node,
+  oneCard: PropTypes.object.isRequired,
 };
