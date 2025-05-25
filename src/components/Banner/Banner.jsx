@@ -12,7 +12,7 @@ const Banner = () => {
           ¡Super Sale!
         </p>
         <p className="text-sm sm:text-[20px] lg:text-[45px] lg:font-semibold text-white pb-6">
-          Hasta 35% off{" "}
+          Up to 35% off{" "}
         </p>
         <Link to="/listado">
           <button
@@ -20,7 +20,7 @@ const Banner = () => {
          sm:px-5 sm:py-2 my-2 sm:text-[20px] text-sm lg:text-[30px] lg:font-semibold lg:w-[190px] lg:h-[65px]
           hover:bg-gray-800"
           >
-            Productos
+            Products
           </button>
         </Link>
       </div>

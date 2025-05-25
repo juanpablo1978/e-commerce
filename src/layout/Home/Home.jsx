@@ -19,29 +19,37 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="h-full w-full">
+    <main className="h-full w-full">
       <Hero />
-      {/* Inicio segunda section */}
-      <CounterBanner />
 
-      <div className="m-5 sm:m-10">
-        <h3 className="text-[40px] text-center mb-10 font-bold">
+      {/* Componente contador */}
+      <div className="flex justify-center items-center lg:block">
+        <CounterBanner />
+      </div>
+
+      {/*productos populares*/}
+      <div className="flex flex-col justify-center">
+        <h3 className="text-[38px] lg:text-[48px] text-center mb-10 font-bold">
           Popular products
         </h3>
-        <div className="sm:grid-rows-1 sm:grid-cols-4 sm:flex justify-around space-x-2.5">
+        <div className="flex flex-col justify-center lg:flex-row lg:justify-around">
           {popularData.map((oneCard) => (
-            <article className="" key={oneCard.id}>
+            <article
+              className="flex flex-col justify-center items-center lg:flex-row lg:justify-around"
+              key={oneCard.id}
+            >
               <CardProduct oneCard={oneCard} />
             </article>
           ))}
         </div>
       </div>
-      {/* Fin section de productos */}
 
+      {/* Banner super sale */}
       <Banner />
 
+      {/*testimonios*/}
       <div className="m-5 sm:m-10 pb-6 ">
-        <h3 className="text-[40px] text-center mb-10 font-bold">
+        <h3 className="text-[48px] text-center mb-10 font-bold">
           Testimonials
         </h3>
         <div
@@ -55,7 +63,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

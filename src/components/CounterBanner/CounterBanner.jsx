@@ -8,7 +8,7 @@ import { dataCounter } from "../../../public/data/Data";
 const CounterBanner = () => {
   return (
     <div
-      className="grid grid-cols-1 sm:grid-cols-4 gap-6 m-6 md:m-12 p-4 border
+      className="grid grid-cols-2 lg:grid-cols-4 gap-6 m-6 md:m-12 p-4 border
     py-10 bg-gradient-to-r from-black to-gray-900 text-white rounded-xl"
     >
       {dataCounter.map(({ id, endCounter, text }) => (
@@ -64,7 +64,7 @@ const CounterBanner = () => {
           <p className="text-lg sm:text-base font-medium text-center">
             Happy client
           </p>
-          <p className="text-sm sm:text-xs text-center">lorem ipsun</p>
+          <p className="text-sm sm:text-xs text-center">around the worlds</p>
         </div>
       </div>
     </div>

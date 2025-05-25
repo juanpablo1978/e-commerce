@@ -39,15 +39,15 @@ const Header = () => {
           </button>
         </div>
 
-        <div className="flex flex-row items-center gap-56 md:gap-10">
-          <Search />
+        <div className="flex flex-row items-center gap-x-9 lg:gap-10">
+          <Search className="" />
 
           <nav>
             <ul className="flex gap-5 font-semibold text-white text-[32px] pt-6 md:text-[42px] md: pb-4">
               <li>
                 <Link to="/cartContent">
                   <div className="relative flex md:gap-3">
-                    <button>
+                    <button className="">
                       <BsCartDash />
                     </button>
 
@@ -89,16 +89,16 @@ const Header = () => {
             </span>
           </div>
 
-          <div className="md:pt-3 font-semibold text-gray-300 text-xl">
+          <div className="md:pt-3 font-semibold text-gray-300 text-[20px]">
             <ul className="md:flex gap-7 sm: hidden">
               <li className="hover:text-gray-400">
                 <Link to="/">Home</Link>
               </li>
               <li className="hover:text-gray-400">
-                <Link to="/listado">Productos</Link>
+                <Link to="/listado">Products</Link>
               </li>
               <li className="hover:text-gray-400">
-                <Link to="/contact">Contacto</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
