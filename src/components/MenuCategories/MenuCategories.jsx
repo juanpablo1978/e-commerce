@@ -1,10 +1,10 @@
-//import { Link } from "react-router-dom";
+// MenuCategories.jsx
+import { useNavigate } from "react-router-dom";
 
 const categories = [
   "all",
-  "Smartphone",
-  "Computer",
-  "Handset",
+  "Smartphones",
+  "Computers",
   "Cameras",
   "Robots",
   "Watches",
@@ -14,12 +14,23 @@ const categories = [
 ];
 
 const MenuCategories = () => {
+  const navigate = useNavigate();
+
+  const handleCategoryClick = (cat) => {
+    if (cat === "all") {
+      navigate("/listado"); // Ruta para ver todos los productos, ajusta si usás otra
+    } else {
+      navigate(`/results?category=${cat}`);
+    }
+  };
+
   return (
     <div className="flex flex-col gap-1 p-4">
       {categories.map((cat) => (
         <button
           key={cat}
-          className="px-4 py-2 border rounded bg-black text-white "
+          onClick={() => handleCategoryClick(cat)}
+          className="px-4 py-2 border rounded bg-black text-white"
         >
           {cat.toUpperCase()}
         </button>

@@ -19,7 +19,9 @@ const CartElements = () => {
     return (
       <article
         key={detailCard.id}
-        className="flex text-gray-600 text-2xl justify-between p-12 items-center border-b-[2px] border-b-gray-500"
+        className="flex flex-col lg:flex-row text-gray-600 text-2xl justify-center gap-y-5 lg:gap-y-0
+         lg:justify-between lg:p-12 py-8
+         items-center border-b-[2px] border-b-gray-500"
       >
         <div className="h-[200px] w-[200px]">
           <img

@@ -9,12 +9,17 @@ const CartTotal = () => {
 
   return (
     <>
-      <article className="flex justify-center items-center gap-10 pt-8">
-        <h3 className="text-3xl text-black">Total a pagar: US${total}</h3>
+      <article className="flex flex-col lg:flex-row justify-center items-center gap-10 pt-8">
+        <h3 className="text-2xl lg:text-3xl text-black">
+          Total to pay: US${total}
+        </h3>
         <Link to="/checkout">
           {" "}
-          <button className="text-white text-2xl bg-black w-[240px] h-[75px] hover:bg-gray-800">
-            PAGAR PEDIDO
+          <button
+            className="text-white text-2xl bg-black w-[190px] lg:w-[240px] h-[75px]
+           hover:bg-gray-800 lg:text-3xl"
+          >
+            PAY ORDER
           </button>
         </Link>
       </article>
