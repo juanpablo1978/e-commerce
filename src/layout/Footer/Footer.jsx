@@ -23,38 +23,40 @@ const Footer = () => {
         </div>
       </article>
 
-      <article className="pb-16 text-stone-300">
-        <h3 className="text-lg font-bold">Find product</h3>
-        <ul className="text-lg list-disc font-light">
-          <li>Brownze arnold</li>
-          <li>Chronograph blue</li>
-          <li>Smart phones</li>
-          <li>Automatic watch</li>
-          <li>Hair straighteners</li>
-        </ul>
-      </article>
+      <section className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-40">
+        <article className="pb-16 text-stone-300">
+          <h3 className="text-lg font-bold">Find product</h3>
+          <ul className="text-lg list-disc font-light">
+            <li>Brownze arnold</li>
+            <li>Chronograph blue</li>
+            <li>Smart phones</li>
+            <li>Automatic watch</li>
+            <li>Hair straighteners</li>
+          </ul>
+        </article>
 
-      <article className="pb-16 text-stone-300">
-        <h3 className="text-lg font-bold">Get help</h3>
-        <ul className="text-lg list-disc font-light">
-          <li>About us</li>
-          <li>Contact us</li>
-          <li>Return policy</li>
-          <li>Privacy policy</li>
-          <li>Payment policy</li>
-        </ul>
-      </article>
+        <article className="pb-16 text-stone-300">
+          <h3 className="text-lg font-bold">Get help</h3>
+          <ul className="text-lg list-disc font-light">
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Return policy</li>
+            <li>Privacy policy</li>
+            <li>Payment policy</li>
+          </ul>
+        </article>
 
-      <article className="text-stone-300">
-        <h3 className="text-lg font-bold">About us</h3>
-        <ul className="text-lg list-disc font-light xl:pb-[63px]">
-          <li>News</li>
-          <li>Service</li>
-          <li>Out policy</li>
-          <li>Custmer care</li>
-          <li>Faq’s</li>
-        </ul>
-      </article>
+        <article className="text-stone-300">
+          <h3 className="text-lg font-bold">About us</h3>
+          <ul className="text-lg list-disc font-light xl:pb-[63px]">
+            <li>News</li>
+            <li>Service</li>
+            <li>Out policy</li>
+            <li>Custmer care</li>
+            <li>Faq’s</li>
+          </ul>
+        </article>
+      </section>
     </main>
   );
 };

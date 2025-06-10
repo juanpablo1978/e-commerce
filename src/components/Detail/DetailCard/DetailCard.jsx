@@ -1,15 +1,22 @@
 import PropTypes from "prop-types";
 import { AiOutlineShoppingCart, AiFillStar } from "react-icons/ai";
+import { CartContext } from "../../../context/CartContext/CartContext";
+import { useContext } from "react";
 
 const DetailCard = ({ data }) => {
   const { title, price, brand, category, images, description, rating } =
     data || {};
 
+  const { buyProduct } = useContext(CartContext);
+
   return (
     <>
       <section className="flex flex-col items-center lg:my-20 pt-10">
         <article className="lg:flex">
-          <div className="h-[350px] w-80 bg-slate-50 overflow-hidden relative lg:h-[500px] lg:w-[550px]">
+          <div
+            className="h-[350px] w-80 bg-slate-50 overflow-hidden md:h-[450px] md:w-[500px]
+           lg:h-[500px] lg:w-[550px]"
+          >
             <img
               className=" w-full h-full  object-cover"
               src={images}
@@ -22,7 +29,7 @@ const DetailCard = ({ data }) => {
           </div>
 
           <div
-            className=" h-96 w-80 bg-white overflow-hidden py-8 px-6 lg:h-[500px] lg:w-[550px]
+            className=" h-[400px] w-80 bg-white overflow-hidden py-8 px-6 lg:h-[500px] lg:w-[550px] md:h-[450px] md:w-[500px]
       relative top-[-30px] border-gray-400 border-[1px] lg:top-[0px]"
           >
             <h3 className="text-2xl lg:text-4xl font-extrabold mb-2">
@@ -54,6 +61,7 @@ const DetailCard = ({ data }) => {
                 className="flex justify-center items-center gap-2 w-[130px] lg:w-[210px] lg:px-[10px] py-2 bg-transparent
                          text-black border-[2px] border-gray-400 cursor-pointer hover:border-black duration-300
                           rounded-xl mb-4 lg:mb-0"
+                onClick={() => buyProduct({ ...data, quanty: 1 })}
               >
                 <AiOutlineShoppingCart className="text-xl lg:text-2xl flex justify-center items-center" />
                 <p className="text-center text-[14px] lg:text-2xl">

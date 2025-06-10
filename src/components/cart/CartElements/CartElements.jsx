@@ -23,7 +23,7 @@ const CartElements = () => {
          lg:justify-between lg:p-12 py-8
          items-center border-b-[2px] border-b-gray-500"
       >
-        <div className="h-[200px] w-[200px]">
+        <div className="h-[200px] w-[200px] md:w-[257px] md:h-[230px]">
           <img
             className="w-full h-full object-cover"
             src={detailCard.images}
@@ -31,13 +31,16 @@ const CartElements = () => {
           />
         </div>
         <div>
-          <h3>{detailCard.title}</h3>
+          <h3 className="md:text-3xl">{detailCard.title}</h3>
         </div>
-        <div>
+        <div className="md:text-3xl">
           <ItemCount product={detailCard} />
         </div>
         <div>
-          <h3> ${detailCard.price * detailCard.quanty}</h3>
+          <h3 className="md:text-3xl">
+            {" "}
+            ${detailCard.price * detailCard.quanty}
+          </h3>
         </div>
         <div>
           <button

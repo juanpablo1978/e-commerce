@@ -1,25 +1,31 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-const MenuMobile = () => {
+const menuItems = [
+  { label: "Home", path: "/" },
+  { label: "Productos", path: "/listado" },
+  { label: "Contacto", path: "/contact" },
+];
+
+const MenuMobile = ({ onClose }) => {
   return (
-    <article
-      className="bg-black w-52 pl-3 font-semibold text-[16px] font-poppins text-white
-   leading-10 md:w-[250px]
-   border-gray-700 border-2 md:pl-4 md:leading-[50px] rounded-xl"
-    >
-      <ul>
-        <li className="hover:text-gray-400 border-b-[1px] border-gray-300">
-          <Link to="/results">Home</Link>
-        </li>
-        <li className="hover:text-gray-400 border-b-[1px] border-gray-300">
-          <Link to="/results">Productos</Link>
-        </li>
-        <li className="hover:text-gray-400">
-          <Link to="/results">Contacto</Link>
-        </li>
-      </ul>
-    </article>
+    <div className="flex flex-col gap-1 p-4">
+      {menuItems.map((item) => (
+        <Link
+          key={item.label}
+          to={item.path}
+          onClick={onClose}
+          className="px-4 py-2 border rounded bg-black text-white text-center"
+        >
+          {item.label.toUpperCase()}
+        </Link>
+      ))}
+    </div>
   );
+};
+
+MenuMobile.propTypes = {
+  onClose: PropTypes.func.isRequired,
 };
 
 export default MenuMobile;

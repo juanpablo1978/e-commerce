@@ -24,14 +24,14 @@ const Search = () => {
     <form className="flex text-white text-2xl lg:pr-5" onSubmit={handleSubmit}>
       <input
         type="text"
-        className="text-lg bg-transparent border-[2px] border-gray-300 pl-7 lg:pl-10
-        outline-none rounded-3xl md:block w-[205px] lg:h-[40px] lg:w-[540px]"
+        className="text-lg bg-transparent border-[2px] border-gray-300 pl-7 lg:pl-10 md:text-2xl
+        outline-none rounded-3xl md:block w-[205px] lg:h-[40px] lg:w-[540px] md:h-14 md:w-[250px]"
         placeholder="Search for products"
         name="keyword"
       />
       <div className="absolute text-xl lg:bottom-[20px] lg:left-[700px] lg:top-[80px] top-[167px] left-[65px]">
         <button type="submit">
-          <FiSearch className="text-gray-500 lg:text-[21px]" />
+          <FiSearch className="text-gray-500 lg:text-[21px] md:hidden" />
         </button>
       </div>
     </form>

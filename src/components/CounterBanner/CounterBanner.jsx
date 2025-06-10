@@ -8,8 +8,8 @@ import { dataCounter } from "../../../public/data/Data";
 const CounterBanner = () => {
   return (
     <div
-      className="grid grid-cols-2 lg:grid-cols-4 gap-6 m-6 md:m-12 p-4 border
-    py-10 bg-gradient-to-r from-black to-gray-900 text-white rounded-xl"
+      className="grid grid-cols-2 md:grid-cols-2 md:w-[580px] lg:grid-cols-4 gap-6 m-6 md:m-12 p-4 border
+    py-10 bg-gradient-to-r from-black to-gray-900 text-white rounded-xl lg:w-[1600px]"
     >
       {dataCounter.map(({ id, endCounter, text }) => (
         <div

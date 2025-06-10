@@ -1,14 +1,10 @@
 import { AiFillStar } from "react-icons/ai";
-import { useContext } from "react";
-import { CartContext } from "../../context/CartContext/CartContext";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const CardProduct = ({ oneCard }) => {
   const { title, price, brand, category, images, id, rating } = oneCard || {};
   console.log(oneCard);
-
-  const { buyProduct } = useContext(CartContext);
 
   return (
     <div className="shadow-md mb-4">
@@ -50,7 +46,6 @@ const CardProduct = ({ oneCard }) => {
           <Link to={`/detailPage/${id}`}>
             {" "}
             <button
-              onClick={() => buyProduct(oneCard)}
               className="flex justify-center items-center gap-2 px-2 py-2 bg-transparent
              text-black border-2 border-gray-300 cursor-pointer hover:border-black duration-300 rounded-xl"
             >

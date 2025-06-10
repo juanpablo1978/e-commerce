@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div
-      className="m-5 sm:m-10 rounded-xl sm:bg-cover bg-center flex items-center justify-end h-48 sm:h-96"
-      style={{ backgroundImage: `url(${banner})`, backgroundSize: "cover" }}
+      className="m-5 sm:m-10 rounded-xl sm:bg-cover bg-center md:text-right flex items-center justify-end h-48 sm:h-96"
+      style={{
+        backgroundImage: `url(${banner})`,
+        backgroundSize: "cover",
+        backgroundColor: "rgba(0,0,0,0.75)",
+      }}
     >
       <div className="text-center me-[5%] sm:me-[10%]">
         <p className="text-lg sm:text-[40px] sm:mb-4 font-medium text-white lg:text-[55px] lg:font-bold pb-4">

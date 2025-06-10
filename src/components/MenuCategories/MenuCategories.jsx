@@ -1,4 +1,3 @@
-// MenuCategories.jsx
 import { useNavigate } from "react-router-dom";
 
 const categories = [
@@ -11,6 +10,7 @@ const categories = [
   "Consoles",
   "Smartwatches",
   "Laptops",
+  "Handsets",
 ];
 
 const MenuCategories = () => {

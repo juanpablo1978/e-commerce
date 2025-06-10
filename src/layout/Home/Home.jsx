@@ -32,7 +32,10 @@ const Home = () => {
         <h3 className="text-[38px] lg:text-[48px] text-center mb-10 font-bold">
           Popular products
         </h3>
-        <div className="flex flex-col justify-center lg:flex-row lg:justify-around">
+        <div
+          className="flex flex-col justify-center lg:grid lg:grid-cols-4 lg:justify-around 
+        md:grid md:grid-cols-2"
+        >
           {popularData.map((oneCard) => (
             <article
               className="flex flex-col justify-center items-center lg:flex-row lg:justify-around"
@@ -45,6 +48,7 @@ const Home = () => {
       </div>
 
       {/* Banner super sale */}
+
       <Banner />
 
       {/*testimonios*/}
@@ -54,7 +58,7 @@ const Home = () => {
         </h3>
         <div
           className="flex justify-center flex-col lg:flex-row items-center
-         lg:justify-around space-x-2.5"
+         lg:justify-around space-x-2.5 md:grid md:grid-cols-2 lg:grid lg:grid-cols-5"
         >
           {testimonialsData.map((testimonialProp) => (
             <article className="pb-4" key={testimonialProp.id}>

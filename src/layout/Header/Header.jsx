@@ -8,18 +8,24 @@ import Search from "../../components/Search/Search";
 import { CounterCart } from "../../components/cart/countCart/CounterCart";
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext/CartContext";
+import MenuMobile from "../../components/MenuMobile/MenuMobile";
 
 const Header = () => {
   const { cart } = useContext(CartContext);
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
   };
 
+  const toggleOpenMenu = () => {
+    setIsOpenMenu(!isOpenMenu);
+  };
+
   return (
-    <header className="bg-black text-white h-full w-full px-6 py-12 font-poppins ">
+    <header className="bg-black text-white h-full w-full px-6 py-12  font-poppins md:h-[300px]">
       <article className="h-full flex items-center justify-center gap-11 pb-9 flex-wrap">
         <div className="flex gap-x-4">
           <div className="w-[50px] h-[50px] rounded-lg">
@@ -48,7 +54,7 @@ const Header = () => {
                 <Link to="/cartContent">
                   <div className="relative flex md:gap-3">
                     <button className="">
-                      <BsCartDash />
+                      <BsCartDash className="md:text-[55px]" />
                     </button>
 
                     <span>{cart.length > 0 ? <CounterCart /> : null}</span>
@@ -82,14 +88,19 @@ const Header = () => {
             {isOpen && <MenuCategories />}
           </div>
 
-          <div className="md:hidden flex gap-2">
+          <div className="md:hidden flex items-center gap-2">
             <h3>Menu</h3>
-            <span className="pt-1">
+            <button onClick={toggleOpenMenu}>
               <AiOutlineMenu />
-            </span>
+            </button>
+            {isOpenMenu && (
+              <div className="absolute top-3 left-44 z-50">
+                <MenuMobile onClose={() => setIsOpenMenu(false)} />
+              </div>
+            )}
           </div>
 
-          <div className="md:pt-3 font-semibold text-gray-300 text-[20px]">
+          <div className="md:pt-3 md:text-[25px] font-semibold text-gray-300 text-[20px]">
             <ul className="md:flex gap-7 sm: hidden">
               <li className="hover:text-gray-400">
                 <Link to="/">Home</Link>

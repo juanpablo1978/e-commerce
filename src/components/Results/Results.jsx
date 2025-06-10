@@ -1,4 +1,3 @@
-// Results.jsx
 import { productos } from "../../../public/data/Data";
 import DetailCard from "../Detail/DetailCard/DetailCard";
 
@@ -48,5 +47,4 @@ const Results = () => {
     </div>
   );
 };
-
 export default Results;
