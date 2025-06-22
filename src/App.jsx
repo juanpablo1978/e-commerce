@@ -8,7 +8,6 @@ import CartProvider from "./context/CartContext/CartContext";
 import CartContent from "./components/cart/CartContent/CartContent";
 import Checkout from "./components/cart/Checkout/Checkout";
 import DetailPage from "./components/Detail/DetailPage/DetailPage";
-import Practica from "./components/Practica/Practica";
 import Results from "./components/Results/Results";
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
           <Route path="/cartContent" Component={CartContent} />
           <Route path="/checkout" Component={Checkout} />
           <Route path="/detailPage/:id" Component={DetailPage} />
-          <Route path="/practica/" Component={Practica} />
           <Route path="/results/" Component={Results} />
         </Routes>
         <Footer />
